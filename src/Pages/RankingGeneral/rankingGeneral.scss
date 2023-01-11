@@ -1,0 +1,447 @@
+.ranking-general-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  // margin-left: 20px;
+  // margin-right: 20px;
+
+  .ranking-general-card {
+    background: #ffffff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
+    // min-width: 660px;
+    max-width: 660px;
+    width: 100%;
+    padding: 24px 50px 21px 50px;
+    min-height: 86vh;
+    margin: auto;
+
+    .ranking-general-card-title-wrapper {
+      display: flex;
+      align-items: center;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #dedede;
+      margin-bottom: 6px;
+
+      .question-title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        h3 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 26px;
+          text-align: center;
+          color: #322e2f;
+          margin: 0px;
+        }
+
+        img {
+          width: 28px;
+          height: 28px;
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .ranking-user-count-wrapper {
+      margin-top: 20px;
+      border-radius: 7px;
+      width: 100%;
+
+      .general-button {
+        background: #f0f4ff;
+        width: 50%;
+        border: 0.5px solid #1a2b51;
+        padding: 11px 0px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        border-radius: 7px 0px 0px 7px;
+        line-height: 18px;
+        text-align: center;
+        color: #1a2b51;
+        text-align: center;
+      }
+
+      .tournament-button {
+        border-radius: 0px 7px 7px 0px;
+        width: 50%;
+        border: 0.5px solid #1a2b51;
+        padding: 11px 0px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #1a2b51;
+        background: inherit;
+      }
+    }
+
+    .ranking-contend {
+      .ranking-wrapper {
+        margin-top: 20px;
+
+        .ranking-game-img {
+          width: 48px;
+          height: 48px;
+          margin-left: 20px;
+        }
+
+        h3 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+          color: #e8626c;
+          margin-left: 25px;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    // Rankings - General - 1 css
+    .ranking-general-filter {
+      margin-top: 20px;
+
+      .form-general {
+        .select-league {
+          padding: 11px 11px;
+          min-width: 158px;
+          border: 0.5px solid #1a2b51;
+          border-radius: 7px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          color: #322e2f;
+          border: 0.5px solid #1a2b51;
+          background: url("../../Assets/Img/leftarrow.svg") no-repeat;
+          background-position: calc(100% - 10px) center !important;
+          -moz-appearance: none !important;
+          -webkit-appearance: none !important;
+          appearance: none !important;
+
+          .option-select {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #322e2f;
+          }
+        }
+      }
+    }
+
+    .ranking-contend-wrapper {
+      padding-top: 5px;
+
+      .ranking-wrapper-number {
+        margin-top: 20px;
+
+        .ranking-medal {
+          width: 29px;
+          height: 38px;
+          margin-right: 15px;
+        }
+
+        .index-ranking {
+          width: 29px;
+          height: 38px;
+          margin-right: 15px;
+          text-align: center;
+        }
+
+        .ranking-avatar {
+          width: 40px;
+          height: 40px;
+          margin-right: 20px;
+        }
+
+        h4 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: #322e2f;
+          margin-right: 20px;
+        }
+
+        .ranking-country {
+          width: 27px;
+          height: 18px;
+        }
+
+        .ranking-xp {
+          background: #f0f4ff;
+          border: 0.5px solid #1a2b51;
+          border-radius: 20px;
+          padding: 10px 17px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+          color: #1a2b51;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ranking-general-wrapper {
+    .ranking-general-card {
+      .online-store {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ranking-general-wrapper {
+    margin: 20px 0px 60px 0px !important;
+
+    .ranking-general-card {
+      background: #ffffff;
+      box-shadow: none;
+      border-radius: 25px;
+      min-width: 530px;
+      max-width: 530px;
+      padding: 24px 24px 21px 24px;
+      height: fit-content;
+
+      .ranking-general-filter {
+        .form-general {
+          .select-league {
+            min-width: 121px;
+            padding: 10px;
+          }
+        }
+      }
+
+      .ranking-contend-wrapper {
+        .ranking-wrapper-number {
+          h4 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+          }
+
+          .ranking-xp {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            color: #1a2b51;
+            padding: 7px 10px;
+          }
+        }
+      }
+
+      .online-store {
+        .online-store-title {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #a5a5a5;
+          margin: 28px 0px 0px 0px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ranking-general-wrapper {
+    margin: 20px 0px 0px 0px;
+
+    .ranking-general-card {
+      background: #ffffff;
+      box-shadow: none;
+      border-radius: 25px;
+      min-width: 450px;
+      max-width: 450px;
+      padding: 12px 12px 12px 12px;
+      height: fit-content;
+
+      .ranking-general-filter {
+        .form-general {
+          .select-league {
+            min-width: 100px;
+            padding: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .ranking-general-wrapper {
+    margin: 20px 0px 0px 0px;
+
+    .ranking-general-card {
+      background: #ffffff;
+      box-shadow: none;
+      border-radius: 25px;
+      min-width: 400px;
+      max-width: 400px;
+      padding: 24px 24px 12px 24px;
+      height: fit-content;
+
+      .ranking-general-card-title-wrapper {
+        padding: 0px 0px 18px 0px;
+
+        .question-title-wrapper {
+          h3 {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: #322e2f;
+          }
+        }
+      }
+
+      .ranking-user-count-wrapper {
+        margin-top: 15px;
+
+        .general-button {
+          padding: 14px 0px;
+          white-space: nowrap;
+        }
+
+        .tournament-button {
+          padding: 14px 0px;
+        }
+      }
+
+      .ranking-contend {
+        margin-top: 24px;
+
+        .ranking-wrapper {
+          margin-top: 12px;
+
+          .ranking-game-img {
+            margin: 0px;
+          }
+
+          .ranking-line {
+            margin: 12px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .ranking-general-wrapper {
+    margin: 20px 0px 0px 0px;
+
+    .ranking-general-card {
+      background: #ffffff;
+      box-shadow: none;
+      border-radius: 12px;
+      min-width: 320px;
+      max-width: 320px;
+      padding: 12px 0px 12px 0px;
+      height: fit-content;
+
+      .ranking-general-filter {
+        .form-general {
+          .select-league {
+            min-width: 100%;
+            padding: 4px;
+            padding-right: 20px;
+            background-position: calc(100% - 6px)
+          }
+        }
+      }
+
+      .ranking-contend-wrapper {
+        .ranking-wrapper-number {
+          h4 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+          }
+
+          .ranking-medal {
+            width: 35px;
+            height: 35px;
+          }
+
+          .ranking-avatar {
+            height: 35px;
+            width: 35px;
+          }
+
+          .ranking-xp {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            color: #1a2b51;
+            padding: 5px 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .ranking-general-wrapper {
+    margin: 20px 0px 0px 0px;
+
+    .ranking-general-card {
+      background: #ffffff;
+      box-shadow: none;
+      border-radius: 12px;
+      min-width: 300px !important;
+      max-width: 300px !important;
+      padding: 12px 0px 12px 0px;
+      height: fit-content;
+
+      .ranking-user-count-wrapper {
+        margin-top: 15px;
+
+        .general-button {
+          padding: 10px 30px;
+          white-space: nowrap;
+        }
+
+        .tournament-button {
+          padding: 10px 30px;
+        }
+      }
+    }
+  }
+}

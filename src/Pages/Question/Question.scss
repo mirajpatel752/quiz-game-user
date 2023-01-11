@@ -1,0 +1,1299 @@
+.question-wrapper {
+  width: 100%;
+  // display: flex;
+  // justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  .question-card {
+    background: #ffffff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
+    max-width: 1100px;
+    width: 100%;
+    padding: 24px;
+    min-height: 85vh;
+    margin: auto;
+
+    .question-card-title-wrapper {
+      display: flex;
+      align-items: center;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #dedede;
+      margin-bottom: 6px;
+
+      .image-header-title {
+        height: 30px;
+        width: 30px;
+      }
+
+      .question-title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        img {
+          width: 27px;
+          height: 24px;
+          margin-right: 10px;
+        }
+
+        h3 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 22px;
+          color: #ffb000;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .question-user-count-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      .first-img-user {
+        width: 38px;
+        height: 38px;
+        margin-right: 9px;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+      }
+
+      .second-img-user {
+        width: 38px;
+        height: 38px;
+        margin-left: 9px;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+      }
+
+      .connect-user {
+        height: fit-content;
+
+        h4 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #322e2f;
+          margin-bottom: 3px;
+        }
+
+        div#wave {
+          position: relative;
+
+          .dot {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-right: 3px;
+            background: #303131;
+            animation: wave 1.3s linear infinite;
+
+            &:nth-child(2) {
+              animation-delay: -1.1s;
+            }
+
+            &:nth-child(3) {
+              animation-delay: -0.9s;
+            }
+          }
+        }
+
+        @keyframes wave {
+          0%,
+          60%,
+          100% {
+            transform: initial;
+          }
+
+          30% {
+            transform: translateY(-8px);
+          }
+        }
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 12px;
+          margin-bottom: 0;
+        }
+
+        .correct-text {
+          color: #00b050;
+        }
+
+        .wrong-text {
+          color: #ec4648;
+        }
+      }
+
+      .center-count-wrapper {
+        background-image: url("../../Assets/Img/clock.svg");
+        background-repeat: no-repeat;
+        width: 41.85px;
+        height: 49px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          color: #1a2b51;
+          margin-bottom: 0;
+          margin-top: 7px;
+        }
+      }
+    }
+
+    .result-fill-wrapper {
+      display: flex;
+      align-items: center;
+      // margin-bottom: 34px;
+
+      p {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #1a2b51;
+        margin-bottom: 0;
+        padding-right: 10px;
+      }
+
+      .result-track {
+        width: 100%;
+        height: 11px;
+        background: #ebf0fd;
+        box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+
+        .result-fill {
+          width: 40%;
+          height: 100%;
+          background: #1a2b51;
+          box-shadow: inset 0px 2px 4px #566d9f;
+          border-radius: 6px;
+        }
+      }
+    }
+
+    .que-wrapper {
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+      height: 360px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 10px;
+
+      .que-deteail {
+        margin: 0px 20px;
+
+        .que-image {
+          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+          border-radius: 20px;
+          height: 140px;
+          width: 160px;
+        }
+
+        .game-title {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 28px;
+          color: #322e2f;
+        }
+
+        .game-title-font {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          color: #322e2f;
+        }
+      }
+    }
+
+    .game-wrapper {
+      margin-top: 20px;
+
+      .que-wrapper {
+        background: #ffffff;
+        box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      .game-img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 75px;
+
+        .game-img {
+          width: 144px;
+          height: 152px;
+        }
+      }
+    }
+
+    .game-btn-wrapper {
+      margin-bottom: 38px;
+
+      button {
+        width: 100%;
+        min-height: 48px;
+        padding: 15px;
+        background: #ffffff;
+        box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: #322e2f;
+        border: none;
+        margin-bottom: 25px;
+      }
+
+      .wrong-ans {
+        color: #ffffff;
+        background: #ec4648;
+      }
+
+      .right-ans {
+        color: #ffffff;
+        background: #5cd149;
+      }
+
+      .game-title-ans {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+      }
+
+      .game-title-font-ans {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+      }
+    }
+
+    .game-booster-wrapper {
+      // display: flex;
+      // justify-content: space-around;
+      box-shadow: -1px -1px 8px #647479;
+      // max-height: 50px;
+      align-items: center;
+      text-align: center;
+      max-width: 116px;
+      margin: 20px auto;
+      border-radius: 10px;
+
+      .footer-que {
+        margin: 40px 0px;
+
+        .booster-count {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 26px;
+          margin: 0 0 0 10px;
+        }
+
+        .title {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 12px;
+          margin-bottom: 0;
+        }
+
+        .game-img {
+          height: 45px;
+          width: 45px;
+        }
+
+        .bg-count {
+          top: 1px;
+          // left: 38px;
+        }
+
+        .que-title {
+          h4 {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .game-booster-wrapper {
+        position: fixed;
+        left: 0;
+        top: inherit;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        right: 0;
+        max-width: 100%;
+        justify-content: space-between;
+        max-height: 58px;
+        background-color: #fff;
+        margin: 0px;
+
+        .footer-que {
+          margin-top: -0.5px;
+
+          .footer-que {
+            margin-top: -0.5px;
+          }
+        }
+      }
+    }
+  }
+
+  .won-lost-modal {
+    margin-left: auto;
+    max-width: 607px;
+    margin-right: auto;
+    width: 100%;
+
+    .modal-content {
+      background: #ffffff;
+      box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 22px 22px 40px 22px;
+
+      .won-lost-contend {
+        .side-back-array {
+          display: none;
+        }
+
+        .close-icon-wrapper {
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        .modal-root {
+          margin: 0px 40px 0px 40px;
+
+          .won-lost-contend-start {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .title-img {
+              height: 30px;
+              width: 30px;
+            }
+
+            .wen-lost-title {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 22px;
+              line-height: 26px;
+              text-align: center;
+              color: #5e00f6;
+              margin: 0px 0px 0px 15px;
+            }
+          }
+
+          .you-won-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 44px;
+            margin-bottom: 20px !important;
+
+            .button-won {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              color: #ffffff;
+              border: none;
+              background: #00b050;
+              border-radius: 7px;
+              padding: 7px 20px;
+            }
+
+            .button-loss {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              color: #ffffff;
+              border: none;
+              background: #ff0000;
+              border-radius: 7px;
+              padding: 7px 20px;
+            }
+
+            .button-draw {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              color: #ffffff;
+              border: none;
+              background: #4472c4;
+              border-radius: 7px;
+              padding: 7px 20px;
+            }
+
+            .pandering-status {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 19px;
+              text-align: center;
+              color: #eab92f;
+              margin-bottom: 14px;
+            }
+          }
+
+          .challenge-img-wrapper {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            // .user-first-img {
+            //   width: 94.91px;
+            //   height: 94.91px;
+            //   border-radius: 50%;
+            //   border: 4px solid #ffcbcc;
+            // }
+
+            .user-first-img {
+              width: 20%;
+              height: 20%;
+              max-width: 20%;
+              border-radius: 50%;
+              border: 4px solid #ffcbcc;
+            }
+
+            .center-line {
+              height: 3px;
+              border: 3px solid #cfcb00;
+              width: 50%;
+            }
+          }
+
+          .title-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 44px;
+
+            .user {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 21px;
+              color: #322e2f;
+              margin: 0px 20px 0px 0px;
+            }
+
+            .user-xp {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 21px;
+              text-align: center;
+              color: #322e2f;
+              margin-top: 12px;
+            }
+
+            img {
+              object-fit: contain;
+              width: 27px;
+              height: 18px;
+            }
+          }
+
+          .details-wrapper-reward {
+            .reward-box {
+              background: #ffe0cc;
+              border-radius: 50px 5px 5px 50px;
+
+              img {
+                width: 36px;
+                height: 36px;
+              }
+
+              .reward {
+                font-family: "Rubik";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: #ff6600;
+                margin: 0px;
+                padding: 0 20px 0 15px;
+              }
+            }
+          }
+
+          .won-option {
+            margin-top: 32px;
+
+            .won-opponent {
+              background: #cfcb00;
+              border-radius: 10px;
+              border: none;
+              padding: 12px 0px;
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              text-align: center;
+              color: #ffffff;
+              white-space: nowrap;
+              width: 189px;
+            }
+
+            .won-pay-again {
+              background: #44546a;
+              border-radius: 10px;
+              border: none;
+              padding: 12px 0px;
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              text-align: center;
+              color: #ffffff;
+              white-space: nowrap;
+              width: 189px;
+            }
+          }
+
+          .review-button-wrap {
+            .review-button {
+              background: #ffffff;
+              box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+              border-radius: 10px;
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              text-align: center;
+              padding: 12px 17px;
+              color: #322e2f;
+              margin-top: 30px;
+              border: none;
+
+              .down-arrow {
+                margin-left: 10px;
+                transition: all 0.5s ease;
+              }
+
+              .up-arrow {
+                margin-left: 10px;
+                transform: rotate(180deg);
+                transition: all 0.5s ease;
+              }
+            }
+          }
+        }
+
+        .questions-root {
+          .questions {
+            .questions-title {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              color: #322e2f;
+            }
+
+            .questions-box {
+              .hr-box-questions {
+                margin: 10px 0px 15px 0px;
+                border: 1px solid #dedede;
+              }
+
+              .box-questions-review {
+                margin: 0px 15px;
+
+                .box-side-name {
+                  .image-que {
+                    width: 67px;
+                    height: 71px;
+                    border-radius: 50%;
+                  }
+
+                  .details-que {
+                    margin-left: 25px;
+
+                    .que-name {
+                      margin: 0px 0px 5px 0px;
+                      font-family: "Rubik";
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 19px;
+                      color: #322e2f;
+                    }
+
+                    .que-subtitle {
+                      margin: 0px;
+                      font-family: "Rubik";
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 19px;
+                      color: #00b050;
+                    }
+
+                    .que-subtitle-calor {
+                      color: #ec4648;
+                      margin: 0px;
+                      font-family: "Rubik";
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 19px;
+                    }
+                  }
+                }
+
+                .box-side-info {
+                  .image-box {
+                    .image-check {
+                      width: 28px;
+                      height: 28px;
+                    }
+
+                    .check-pr {
+                      margin-top: 8px;
+                      font-family: "Rubik";
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 19px;
+                      color: #322e2f;
+                    }
+                  }
+
+                  .image-info {
+                    height: 19px;
+                    width: 19px;
+                    margin: 0px 0px 10px 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .won-title-image {
+    height: 27px;
+    width: 24px;
+  }
+
+  .conform-modal-question-back {
+    .modal-content {
+      max-width: 556px;
+      background: #ffffff;
+      box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.1);
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .conform-modal-wrapper-back {
+      text-align: center;
+
+      .close-icon-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 13px;
+      }
+
+      .conformation-back-wrapper {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      h4 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: #322e2f;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #a5a5a5;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 324px;
+        width: 100%;
+      }
+
+      .yes-btn {
+        background: #cfcb00;
+        border-radius: 10px;
+        padding: 13px;
+        border: none;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        max-width: 170px;
+        width: 100%;
+        margin-right: 30px;
+        margin-bottom: 8px;
+      }
+
+      .no-btn {
+        background: #44546a;
+        border-radius: 10px;
+        padding: 13px;
+        border: none;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        max-width: 170px;
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .question-wrapper {
+      width: 100%;
+      // display: flex;
+      // justify-content: center;
+      margin-top: 0px;
+      margin-bottom: 74px;
+
+      .question-card {
+        background: #ffffff;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+        border-radius: 25px;
+        max-width: 540px;
+        width: 100%;
+        padding: 24px 25px 12px 25px;
+        height: fit-content;
+
+        .game-btn-wrapper {
+          button {
+            padding: 15px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+
+    .close-icon-wrapper {
+      // display: none;
+    }
+
+    .modal-root {
+      margin: 15px 20px 0px 20px;
+
+      // .img-fluid {
+      //   width: 27px;
+      //   height: 27px;
+      // }
+
+      .won-lost-contend-start {
+        .wen-lost-title {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          color: #ffb000;
+          margin: 0px;
+          margin-left: 15px;
+        }
+      }
+
+      .you-won-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 44px;
+
+        .button-won {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          color: #ffffff;
+          border: none;
+          background: #5cd149;
+          border-radius: 7px;
+          padding: 7px 20px;
+        }
+      }
+
+      .challenge-img-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        // .user-first-img {
+        //   width: 94.91px;
+        //   height: 94.91px;
+        //   border-radius: 50%;
+        //   border: 4px solid #ffcbcc;
+        // }
+
+        .user-first-img {
+          width: 20%;
+          height: 20%;
+          max-width: 20%;
+        }
+
+        .center-line {
+          height: 3px;
+          border: 3px solid #cfcb00;
+          width: 50%;
+        }
+      }
+
+      .title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 44px;
+
+        .user {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: #322e2f;
+          margin: 0px 20px 0px 0px;
+        }
+
+        .user-xp {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: center;
+          color: #322e2f;
+          margin-top: 12px;
+        }
+
+        img {
+          object-fit: contain;
+        }
+      }
+
+      .won-option {
+        margin-top: 32px;
+
+        .won-opponent {
+          background: #cfcb00;
+          border-radius: 10px;
+          border: none;
+          padding: 12px 31px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: center;
+          color: #ffffff;
+          white-space: nowrap;
+        }
+
+        .won-pay-again {
+          background: #44546a;
+          border-radius: 10px;
+          border: none;
+          padding: 12px 49px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: center;
+          color: #ffffff;
+          white-space: nowrap;
+        }
+      }
+
+      .review-button-wrap {
+        .review-button {
+          background: #ffffff;
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+          border-radius: 10px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: center;
+          padding: 12px 17px;
+          color: #322e2f;
+          margin-top: 30px;
+        }
+      }
+    }
+
+    .questions-root {
+      .questions {
+        .questions-title {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          color: #322e2f;
+        }
+
+        .questions-box {
+          .hr-box-questions {
+            margin: 10px 0px 15px 0px;
+            border: 1px solid #dedede;
+          }
+
+          .box-questions-review {
+            margin: 0px 15px;
+
+            .box-side-name {
+              .image-que {
+                width: 67px;
+                height: 71px;
+              }
+
+              .details-que {
+                margin-left: 25px;
+
+                .que-name {
+                  margin: 0px 0px 5px 0px;
+                  font-family: "Rubik";
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 19px;
+                  color: #322e2f;
+                }
+
+                .que-subtitle {
+                  margin: 0px;
+                  font-family: "Rubik";
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 19px;
+                  color: #00b050;
+                }
+
+                .que-subtitle-calor {
+                  color: #ec4648;
+                  margin: 0px;
+                  font-family: "Rubik";
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 19px;
+                }
+              }
+            }
+
+            .box-side-info {
+              .image-box {
+                .image-check {
+                  width: 28px;
+                  height: 28px;
+                }
+
+                .check-pr {
+                  margin-top: 8px;
+                  font-family: "Rubik";
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 19px;
+                  color: #322e2f;
+                }
+              }
+
+              .image-info {
+                height: 15px;
+                width: 15px;
+                margin: 0px 0px 10px 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .question-wrapper {
+      width: 100%;
+      // display: flex;
+      // justify-content: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+      .question-card {
+        background: #ffffff;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+        border-radius: 25px;
+        // max-width: 470px;
+        width: 96%;
+        padding: 24px 25px 12px 25px;
+        height: fit-content;
+
+        .result-fill-wrapper {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+
+        .game-wrapper {
+          .que-wrapper {
+            background: #ffffff;
+            box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+
+            .game-title {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 21px;
+              text-align: center;
+              color: #322e2f;
+              margin-bottom: 0px;
+            }
+
+            .que-img {
+              width: 124px;
+              height: 124px;
+            }
+          }
+
+          .game-img-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 75px;
+
+            .game-img {
+              width: 144px;
+              height: 152px;
+            }
+          }
+        }
+
+        .game-btn-wrapper {
+          margin-bottom: 38px;
+
+          button {
+            padding: 8px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .question-wrapper {
+      width: 100% !important;
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+      .question-card {
+        background: #ffffff;
+        box-shadow: none;
+        max-width: 400px;
+        width: 100%;
+        padding: 12px;
+
+        .accept-button-mobile {
+          max-height: calc(100vh - 120px);
+          overflow-y: scroll;
+
+          .question-user-count-wrapper {
+            margin-top: 12px;
+
+            .first-img-user {
+              height: 35px;
+              width: 35px;
+            }
+
+            .center-count-wrapper {
+              // background-position: 100%, 100%;
+              height: 35px;
+              width: 35px;
+              background-size: contain;
+
+              p {
+                font-family: "Rubik";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                color: #1a2b51;
+                margin: 5px 3px 0px 0px;
+              }
+            }
+
+            .connect-user {
+              .second-img-user {
+                height: 35px;
+                width: 35px;
+              }
+            }
+          }
+
+          .que-wrapper {
+            height: 300px;
+          }
+
+          .result-fill-wrapper {
+            margin-bottom: 20px;
+          }
+
+          .game-wrapper {
+            .que-wrapper {
+              background: #ffffff;
+              box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              text-align: center;
+              padding: 10px;
+              margin-bottom: 20px;
+
+              .game-title {
+                font-family: "Rubik";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 20px;
+                margin-bottom: 0px;
+              }
+
+              .que-img {
+                width: 104px;
+                height: 104px;
+              }
+            }
+
+            .game-img-wrapper {
+              margin-bottom: 66px;
+
+              .game-img {
+                width: 91px;
+                height: 96px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .question-wrapper {
+    width: 100%;
+    // display: flex;
+    // justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    .question-card {
+      background: #ffffff;
+      box-shadow: none;
+      border-radius: 25px;
+      // max-width: 300px;
+      width: 96%;
+      padding: 12px 0px 12px 0px;
+      height: fit-content;
+    }
+  }
+}

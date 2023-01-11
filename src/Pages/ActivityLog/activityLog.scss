@@ -1,0 +1,1242 @@
+.ranking-general-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 80px 0px 80px 0px;
+
+  .ranking-general-card {
+    background: #ffffff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
+    // min-width: 660px;
+    max-width: 660px;
+    width: 100%;
+    padding: 24px 50px 21px 50px;
+    height: fit-content;
+
+    .ranking-general-card-title-wrapper {
+      display: flex;
+      align-items: center;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #dedede;
+      margin-bottom: 6px;
+
+      .question-title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        h3 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 26px;
+          text-align: center;
+          color: #322e2f;
+          margin: 0px;
+        }
+
+        img {
+          width: 28px;
+          height: 28px;
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .box-activity-log {
+      background: #ffffff;
+      box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
+      border-radius: 12px;
+      padding: 20px 0px 20px 20px;
+      margin: 25px 0px 18px 0px;
+      position: relative;
+
+      .box-avatar-img {
+        .box-image {
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      .box-details {
+        margin-left: 15px;
+
+        .box-user-name {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          color: #322e2f;
+          margin: 0px;
+
+          .box-theme {
+            font-weight: 600;
+          }
+        }
+
+        .user-img {
+          margin-left: 10px;
+        }
+
+        .box-challenged {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          margin: 4px 0px 0px 0px;
+          color: #898989;
+
+          .box-theme {
+            color: #ec4648;
+            font-weight: 600;
+          }
+        }
+
+        .box-subtitle {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          margin: 4px 0px 0px 0px;
+          color: #898989;
+        }
+
+        .no-user {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          margin: 0px;
+          color: #322e2f;
+
+          .color-noUserTitle {
+            color: rgba(251, 134, 39, 1);
+          }
+        }
+      }
+
+      .mr-60 {
+        margin-right: 60px;
+      }
+
+      .button-side-pr {
+        background: rgba(0, 176, 80, 0.2);
+        border-radius: 15.5px 0px 0px 15.5px;
+        border: none;
+        padding: 3px 0px 3px 3px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+
+        p {
+          margin: 0px 10px 0px 10px;
+          color: #FF6600;
+        }
+      }
+
+      .button-side-pr-red {
+        background: rgba(236, 70, 72, 0.2);
+        border-radius: 15.5px 0px 0px 15.5px;
+        border: none;
+        padding: 3px 0px 3px 3px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+
+        p {
+          margin: 0px 10px 0px 10px;
+          color: #FF6600;
+        }
+      }
+
+      .button-side-pr-blue {
+        background: #DAE3F3;
+        border-radius: 15.5px 0px 0px 15.5px;
+        border: none;
+        padding: 3px 0px 3px 3px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+
+        p {
+          margin: 0px 10px 0px 10px;
+          color: #FF6600;
+        }
+      }
+
+      .box-image-pr {
+        .img-fluid-pr {
+          height: 25px;
+          width: 25px;
+          margin-right: 7px;
+        }
+
+        .box-pr {
+          margin: 0px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          color: #FF6600;
+        }
+      }
+
+      .button-root {
+        .box-button-accept {
+          background: #5cd149;
+          border-radius: 4px;
+          padding: 6px 10px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          color: #ffffff;
+          border: none;
+          margin-right: 10px;
+        }
+
+        .box-button-decline {
+          border: 1px solid #ec4648;
+          border-radius: 4px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          color: #ec4648;
+          background-color: #fff;
+          padding: 5px 10px;
+          margin-right: 20px;
+        }
+
+        .box-button-play {
+          background: #1a2b51;
+          border-radius: 4px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          padding: 6px 10px;
+          color: #ffffff;
+          margin-right: 20px;
+          border: none;
+        }
+
+        .box-button-response {
+          border: none;
+          border-radius: 4px;
+          padding: 6px 10px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          color: #ffffff;
+          background: rgba(234, 150, 1, 0.1);
+          margin-right: 20px;
+          white-space: nowrap;
+          background: #ea9601;
+        }
+
+        .box-button-Withdraw {
+          border: 1px solid #ec4648;
+          border-radius: 4px;
+          padding: 5px 10px;
+          background-color: inherit;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          margin-right: 20px;
+          color: #ec4648;
+        }
+
+
+      }
+
+      // .detail-wrappers {
+      //   margin-bottom: 15px;
+      // }
+
+      .button-mobile-view {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .read-more-pagination {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      color: #00b0f0;
+      width: fit-content;
+      margin: auto;
+      margin-bottom: 0px;
+      cursor: pointer;
+    }
+
+    .pre-btn {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: -30px;
+      transform: translate(0, -50%);
+    }
+
+    .next-btn {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: -30px;
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+.won-lost-modal-activityModal {
+  .modal-content {
+    min-width: 606px;
+    background: #ffffff;
+    box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 22px 22px 40px 22px;
+
+    .close-icon-wrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .modal-root {
+      margin: 0px 40px 0px 40px;
+
+      .won-lost-contend-start {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .wen-lost-title {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 26px;
+          text-align: center;
+          color: #5e00f6;
+          margin: 0px 0px 0px 15px;
+        }
+
+        img {
+          height: 30px;
+          width: 30px;
+        }
+      }
+
+      .you-won-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 44px;
+
+        .button-won {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          color: #ffffff;
+          border: none;
+          background: #5cd149;
+          border-radius: 7px;
+          padding: 7px 20px;
+        }
+      }
+
+      .challenge-img-wrapper {
+        display: flex;
+        align-items: center;
+        margin: 73px 0px 20px 0px;
+
+        // .user-first-img {
+        //   width: 94.91px;
+        //   height: 94.91px;
+        //   border-radius: 50%;
+        //   border: 4px solid #ffcbcc;
+        // }
+        .user-first-img {
+          width: 20%;
+          height: 20%;
+          max-width: 20%;
+          border-radius: 50%;
+          border: 4px solid #ffcbcc;
+        }
+
+        .logo {
+          width: 60%;
+        }
+
+        .center-line {
+          height: 3px;
+          border: 3px solid #cfcb00;
+          width: 16%;
+        }
+      }
+
+      .title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 44px;
+
+        .user {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: #322e2f;
+          margin: 0px 20px 0px 0px;
+        }
+
+        .country-logo {
+          width: 27px;
+          height: 18px;
+        }
+
+        .user-xp {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: center;
+          color: #322e2f;
+          margin-top: 12px;
+        }
+
+        img {
+          object-fit: contain;
+        }
+      }
+
+      .details-wrapper-reward {
+        .reward-box {
+          background: #FFE0CC;
+          border-radius: 50px 5px 5px 50px;
+          margin-bottom: 10px;
+
+          img {
+            width: 36px;
+            height: 36px;
+          }
+
+          .reward {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #FF6600;
+            margin: 0px;
+            padding: 0 20px 0 15px;
+          }
+        }
+      }
+
+      .start-button {
+        background: #1a2b51;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        padding: 12px 25px;
+        color: #ffffff;
+        margin-bottom: 50px;
+        border: none;
+
+        img {
+          margin-left: 22px;
+          margin-right: 30px;
+        }
+      }
+
+      .won-option {
+        margin-top: 32px;
+
+        .won-opponent {
+          background: #cfcb00;
+          border-radius: 10px;
+          border: none;
+          padding: 12px 0px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: center;
+          color: #ffffff;
+          white-space: nowrap;
+        }
+
+        .won-pay-again {
+          background: #44546a;
+          border-radius: 10px;
+          border: none;
+          padding: 12px 0px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: center;
+          color: #ffffff;
+          white-space: nowrap;
+        }
+      }
+
+      .review-button-wrap {
+        .review-button {
+          background: #ffffff;
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+          border-radius: 10px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: center;
+          padding: 12px 17px;
+          color: #322e2f;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+.activity-delete-modal {
+  max-width: 556px;
+
+  .modal-content {
+    background: #ffffff;
+    box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    padding: 20px;
+
+    .activity-wrapper {
+      .close-icon-wrapper {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .activity-contend {
+        .activity-image {
+          margin-top: 8px;
+        }
+
+        h2 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 26px;
+          text-align: center;
+          color: #322e2f;
+          margin: 25px 0px 30px 0px;
+        }
+
+        .activity-details {
+          margin: auto;
+
+          p {
+            max-width: 337px;
+            margin: auto;
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #a5a5a5;
+
+            span {
+              color: rgba(232, 98, 108, 1);
+            }
+          }
+        }
+
+        .activity-button-wrapper {
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 70px;
+          margin-bottom: 26px;
+
+          .cancel-btn {
+            background: #44546a;
+            border-radius: 10px;
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #ffffff;
+            margin-right: 30px;
+            border: none;
+            padding: 13px 0px;
+            width: 215px;
+          }
+
+          .delete-btn {
+            background: #eb5569;
+            border-radius: 10px;
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            border: none;
+            padding: 13px 0px;
+            color: #ffffff;
+            width: 215px;
+          }
+
+          .withdraw-btn {
+            background: #ea9601;
+            border-radius: 10px;
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            border: none;
+            padding: 13px 0px;
+            color: #ffffff;
+            width: 215px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ranking-general-wrapper {
+    margin: 25px 0px 67px 0px;
+
+    .ranking-general-card {
+      box-shadow: none;
+      border-radius: 6px;
+      //   min-width: 630px;
+      max-width: 630px;
+      margin-bottom: 0px;
+
+      .box-activity-log {
+        .button-root {
+          white-space: nowrap;
+        }
+
+        .detail-wrappers {
+          margin-bottom: 15px;
+        }
+
+        .button-mobile-view {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+
+  .won-lost-modal-activityModal {
+    .modal-content {
+      min-width: 500px;
+      background: #ffffff;
+      box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 22px 22px 40px 22px;
+
+      .won-lost-contend {
+        .modal-root {
+          margin: 0px 20px 0px 20px;
+        }
+
+        .challenge-img-wrapper {
+          margin-top: 50px;
+          margin-bottom: 10px;
+
+          // .user-first-img {
+          //   height: 80px;
+          //   width: 80px;
+          // }
+          .user-first-img {
+            width: 20%;
+            height: 20%;
+            max-width: 20%;
+          }
+
+          // .img-fluid {
+          //   height: 80px;
+          //   width: 80px;
+          // }
+        }
+
+        .title-wrapper {
+          .user {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #322e2f;
+            margin-right: 8px;
+          }
+        }
+
+        .start-button {
+          // margin-top: 50px;
+          padding: 7px 19px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .ranking-general-wrapper {
+    // margin: 20px 0px 20px 0px;
+
+    .ranking-general-card {
+      box-shadow: none;
+      border-radius: 6px;
+      //   min-width: 590px;
+      max-width: 590px;
+
+      .box-activity-log {
+        .detail-wrappers {
+          margin-bottom: 15px;
+
+          .button-mobile-view {
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+
+  .won-lost-modal-activityModal {
+    .modal-content {
+      min-width: 400px;
+      background: #ffffff;
+      box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 20px 15px 30px 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ranking-general-wrapper {
+    // margin: 20px 0px 20px 0px;
+
+    .ranking-general-card {
+      box-shadow: none;
+      border-radius: 6px;
+      //   min-width: 430px;
+      max-width: 430px;
+      width: 100%;
+      padding: 12px 40px 21px 40px;
+    }
+  }
+
+  .won-lost-modal {
+    margin-left: auto;
+    // max-width: 428px !important;
+    margin-right: auto;
+    width: 100% !important;
+
+    .modal-content {
+      background: #ffffff;
+      box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 22px 22px 40px 22px;
+
+      .won-lost-contend {
+        .side-back-array {
+          display: none;
+        }
+
+        .close-icon-wrapper {
+          display: flex;
+          justify-content: flex-end !important;
+
+          img {
+            width: fit-content;
+          }
+        }
+
+        .modal-root {
+          margin: 0px 0px 0px 0px !important;
+          padding: 0px 0px 0px 0px !important;
+
+          .won-lost-contend-start {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .title-img {
+              height: 28px;
+              width: 28px;
+            }
+
+            .wen-lost-title {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 22px;
+              line-height: 26px;
+              text-align: center;
+              color: #5e00f6;
+              margin: 0px 0px 0px 15px;
+            }
+          }
+
+          .you-won-button {
+            display: flex;
+            justify-content: center;
+            margin: 44px;
+
+            .button-won {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              color: #ffffff;
+              border: none;
+              background: #5cd149;
+              border-radius: 7px;
+              padding: 7px 20px;
+            }
+
+            .button-loss {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              color: #ffffff;
+              border: none;
+              background: #FF0000;
+              border-radius: 7px;
+              padding: 7px 20px;
+            }
+
+            .pandering-status {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 19px;
+              text-align: center;
+              color: #eab92f;
+              margin-bottom: 14px;
+            }
+          }
+
+          .challenge-img-wrapper {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            // .user-first-img {
+            //   width: 63.91px !important;
+            //   height: 63.91px !important;
+            //   border-radius: 50%;
+            //   border: 4px solid #ffcbcc;
+            // }
+            .user-first-img {
+              width: 20%;
+              height: 20%;
+              max-width: 20%;
+            }
+
+            .center-line {
+              height: 3px;
+              border: 3px solid #cfcb00;
+              width: 50%;
+            }
+          }
+
+          .title-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 22px !important;
+
+            .user {
+              font-style: normal;
+              font-weight: 400 !important;
+              font-size: 14px !important;
+              line-height: 17px !important;
+              color: #322e2f;
+              margin: 0px 20px 0px 0px;
+            }
+
+            .user-xp {
+              font-family: "Rubik";
+              font-weight: 400 !important;
+              font-size: 14px !important;
+              line-height: 17px !important;
+              text-align: center;
+              color: #322e2f;
+              margin: 0px !important;
+            }
+
+            img {
+              object-fit: contain;
+            }
+          }
+
+          // .details-wrapper-reward {
+          //   .reward-box {
+          //     background: #ffffff;
+          //     box-shadow: 0px 0px 4px #ed7d31;
+          //     border-radius: 9px;
+
+          //     .reward {
+          //       padding: 4px 28px 0px 28px !important;
+          //       margin: 0px;
+          //     }
+
+          //     .horizontal-line {
+          //       margin: 0px;
+          //       padding: 0px;
+          //       margin-bottom: 3px !important;
+          //       color: #ed7d31;
+          //     }
+
+          //     .img-fluid {
+          //       margin-top: 2px !important;
+          //       height: 20px !important;
+          //       width: 20px !important;
+          //     }
+
+          //     .reward-count {
+          //       font-family: "Rubik";
+          //       font-style: normal;
+          //       font-weight: 600;
+          //       font-size: 20px !important;
+          //       line-height: 24px !important;
+          //       text-align: center;
+          //       color: #ed7d31;
+          //       margin-left: 12px;
+          //     }
+          //   }
+          // }
+
+          .won-option {
+            margin-top: 32px;
+
+            .won-opponent {
+              background: #cfcb00;
+              border-radius: 10px;
+              border: none;
+              padding: 12px 0px !important;
+              font-family: "Rubik";
+              font-weight: 600 !important;
+              font-size: 18px !important;
+              line-height: 21px !important;
+              text-align: center;
+              color: #ffffff;
+              white-space: nowrap;
+              width: 169px !important;
+              margin-right: 15px !important;
+            }
+
+            .won-pay-again {
+              background: #44546a;
+              border-radius: 10px;
+              border: none;
+              padding: 12px 0px !important;
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              text-align: center;
+              color: #ffffff;
+              white-space: nowrap;
+
+              width: 169px !important;
+            }
+          }
+
+          .review-button-wrap {
+            .mobile-review-que {
+              font-family: "Rubik";
+              font-style: normal !important;
+              font-weight: 600 !important;
+              font-size: 15px !important;
+              line-height: 18px !important;
+              color: #322e2f !important;
+              margin: 0px !important;
+            }
+
+            .review-button {
+              background: #ffffff;
+              box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+              border-radius: 10px;
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              text-align: center;
+              padding: 12px 17px;
+              color: #322e2f;
+              margin-top: 30px;
+              border: none;
+            }
+          }
+        }
+
+        .questions-root {
+          margin: 40px 0px 0px 0px !important;
+
+          .questions {
+            .questions-title {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              color: #322e2f;
+              margin-bottom: 10px;
+            }
+
+            .questions-box {
+              .hr-box-questions {
+                margin: 10px 0px 10px 0px;
+                border: 1px solid #dedede;
+              }
+
+              .box-questions-review {
+                margin: 0px 0px !important;
+
+                .box-side-name {
+                  .image-que {
+                    width: 58px !important;
+                    height: 61px !important;
+                  }
+
+                  .details-que {
+                    margin-left: 15px !important;
+
+                    .que-name {
+                      margin: 0px 0px 5px 0px;
+                      font-family: "Rubik";
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 14px !important;
+                      line-height: 17px !important;
+                      color: #322e2f;
+                    }
+
+                    .que-subtitle {
+                      margin: 0px;
+                      font-family: "Rubik";
+                      font-weight: 500;
+                      font-size: 14px;
+                      line-height: 17px;
+                      color: #00b050;
+                    }
+
+                    .que-subtitle-calor {
+                      color: #ec4648;
+                      margin: 0px;
+                      font-family: "Rubik";
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 19px;
+                    }
+                  }
+                }
+
+                .box-side-info {
+                  .image-box {
+                    .image-check {
+                      width: 24px;
+                      height: 24px;
+                    }
+
+                    .check-pr {
+                      margin-top: 8px;
+                      font-family: "Rubik";
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 14px;
+                      line-height: 17px;
+                      color: #322e2f;
+                    }
+                  }
+
+                  .image-info {
+                    height: 15px;
+                    width: 15px;
+                    margin: 0px 0px 10px 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .ranking-general-wrapper {
+    margin: 20px 0px 67px 0px;
+
+    .ranking-general-card {
+      padding: 0px 25px 21px 25px;
+
+      .ranking-general-card-title-wrapper {
+        .question-title-wrapper {
+          h3 {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: #322e2f;
+          }
+        }
+      }
+    }
+  }
+
+  .won-lost-modal-activityModal {
+    .modal-content {
+      min-width: 300px;
+      background: #ffffff;
+      box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 22px 22px 40px 22px;
+
+      .won-lost-contend {
+        .modal-root {
+          margin: 0px 10px 0px 10px;
+        }
+
+        .challenge-img-wrapper {
+          margin-top: 40px;
+          margin-bottom: 8px;
+
+          // .user-first-img {
+          //   height: 70px;
+          //   width: 70px;
+          // }
+
+          // .img-fluid {
+          //   height: 70px;
+          //   width: 70px;
+          // }
+        }
+
+        .title-wrapper {
+          .user {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #322e2f;
+            margin-right: 8px;
+          }
+        }
+
+        .start-button {
+          // margin-top: 40px;
+          padding: 6px 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .ranking-general-wrapper {
+
+    .ranking-general-card {
+      background: #ffffff;
+      box-shadow: none;
+      border-radius: 12px;
+      // min-width: 300px !important;
+      max-width: 300px !important;
+      padding: 12px 20px;
+      height: fit-content;
+
+      .ranking-user-count-wrapper {
+        margin-top: 15px;
+
+        .general-button {
+          padding: 10px 30px;
+          white-space: nowrap;
+        }
+
+        .tournament-button {
+          padding: 10px 30px;
+        }
+      }
+
+      .ranking-general-card-title-wrapper {
+        .question-title-wrapper {
+          h3 {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: #322E2F;
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}

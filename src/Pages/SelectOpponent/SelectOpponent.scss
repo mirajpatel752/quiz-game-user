@@ -1,0 +1,542 @@
+.select-opponent-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+
+  .select-opponent-card {
+    background: #ffffff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
+    max-width: 660px;
+    width: 100%;
+    padding: 18px 50px 21px 50px;
+    min-height: 86vh;
+
+    .select-opponent-title-wrapper {
+      display: flex;
+      align-items: center;
+      padding-bottom: 18px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #dedede;
+
+      img {
+        height: 13px;
+        width: 13px;
+      }
+
+      h3 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: #322e2f;
+        width: 100%;
+      }
+    }
+
+    .input-wrapper {
+      margin-bottom: 15px;
+
+      input {
+        background: rgba(227, 227, 227, 0.5);
+        border-radius: 23.5px;
+        border: none;
+        outline: none;
+        padding: 8px 47px;
+        width: 100%;
+        background-image: url("../../Assets/Img/search-input.svg");
+        background-repeat: no-repeat;
+        background-position: 25px 50%;
+      }
+    }
+
+    .online-friends-btn-wrapper {
+      display: flex;
+      margin-bottom: 20px;
+
+      button:nth-child(1) {
+        background: #cfcb00;
+        border-radius: 10px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: #ffffff;
+        padding: 12px 0;
+        border: none;
+        width: 50%;
+        margin-right: 12px;
+      }
+
+      //TODO:
+      button:nth-child(2) {
+        background: #44546a;
+        border-radius: 10px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: #ffffff;
+        padding: 12px 0;
+        border: none;
+        width: 50%;
+        margin-left: 12px;
+      }
+    }
+
+    .random-opponent {
+      border: 1px solid #24afe0;
+      border-radius: 15px;
+      padding: 15px 50px 23px 50px;
+
+      .random-title {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #322e2f;
+        margin-bottom: 20px;
+      }
+
+      .random-opponent-card {
+        background: #ffffff;
+        box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        min-height: 145px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 7px;
+        margin-bottom: 18px;
+
+        .win-img-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 15px;
+
+          .win-title {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #96592f;
+            margin-bottom: 0;
+          }
+
+          img {
+            height: 25px;
+            width: 25px;
+          }
+
+          .count {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FF6600;
+            margin-bottom: 0px;
+          }
+        }
+
+        .random-card-title-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 15px;
+
+          img {
+            width: 23px;
+            height: 23px;
+            margin-right: 8px;
+          }
+
+          .title {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 0;
+          }
+        }
+
+        .random-card-footer {
+          border-radius: 0px 0px 10px 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 6px 15px;
+
+          .status {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #ffffff;
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .challenge-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        border-bottom: 1px solid #dedede;
+
+        .userName-wrapper {
+          display: flex;
+          align-items: center;
+
+          .avatar {
+            width: 45px;
+            height: 45px;
+            margin-right: 15px;
+          }
+
+          p {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #322e2f;
+            margin: 0 20px 0 0;
+          }
+
+          .country-logo {
+            width: 27px;
+            height: 18px;
+          }
+        }
+
+        .challenge-btn {
+          border: 0.8px solid #5cd149;
+          border-radius: 16px;
+          padding: 8px 20px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #5cd149;
+          background-color: transparent;
+        }
+
+        .challenge-btn:hover {
+          background: rgba(92, 209, 73, 0.2);
+        }
+      }
+
+      .random-opponent-lock-wrapper {
+        position: absolute;
+        left: -5px;
+        right: -5px;
+        bottom: -10px;
+        height: 62px;
+        background: rgba(240, 240, 240, 0.7);
+        border: 1px solid #d9d9d9;
+        box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(2px);
+        border-radius: 7px;
+
+        img {
+          position: absolute;
+          right: 30px;
+          top: 50%;
+          transform: translate(0, -50%);
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.invite-modal {
+  max-width: 607px;
+
+  .modal-content {
+    background: #ffffff;
+    box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    padding: 23px 30px;
+  }
+
+  .invite-detail-wrapper {
+    .close-icon-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .details-wrapper {
+      padding: 0px 30px 0px 12px;
+
+      h1 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: #322e2f;
+        margin-bottom: 40px;
+      }
+
+      .share-link-wrapper {
+        margin-bottom: 40px;
+
+        h5 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          color: #322e2f;
+          margin-bottom: 15px;
+        }
+
+        .img-share-wrapper {
+          white-space: nowrap;
+
+          img {
+            margin-right: 30px;
+          }
+        }
+      }
+
+      .input-wrapper {
+        position: relative;
+
+        input {
+          background: #ffffff;
+          border: 1px solid #dadada;
+          border-radius: 10px;
+          padding: 11px 20px;
+          width: 100%;
+        }
+
+        img {
+          position: absolute;
+          top: 50%;
+          right: 0px;
+          transform: translate(0, -50%);
+          background: #ebf0fd;
+          border-radius: 0px 9px 9px 0px;
+          padding: 16px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .select-opponent-wrapper {
+    margin-top: 40px;
+
+    .select-opponent-card {
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      max-width: 660px;
+      padding: 18px 50px 21px 50px;
+
+      .select-opponent-title-wrapper {
+        h3 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          text-align: center;
+          color: #322e2f;
+          margin: 0px;
+        }
+      }
+
+      .input-wrapper {
+        input {
+          padding: 11px 42px 13px 42px;
+        }
+
+        ::placeholder {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: #a5a5a5;
+        }
+      }
+
+      .random-opponent {
+        padding: 15px 13px 23px 13px;
+        border: none;
+
+        .random-opponent-lock-wrapper {
+          left: -1px;
+          right: -1px;
+          bottom: -1px;
+          height: 50px;
+
+          img {
+            right: 21px;
+            height: 29px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .select-opponent-wrapper {
+    margin-top: 20px;
+
+    .select-opponent-card {
+      box-shadow: none;
+      max-width: 660px;
+      padding: 18px 24px 21px 24px;
+
+      .online-friends-btn-wrapper {
+        button {
+          padding: 8px 0px;
+          white-space: nowrap;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+          color: #ffffff;
+          margin-right: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .select-opponent-wrapper {
+    margin-top: 0px;
+
+    .select-opponent-card {
+      box-shadow: none;
+      max-width: 660px;
+      padding: 18px 12px 12px 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .invite-modal {
+    .modal-content {
+      background: #ffffff;
+      box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.1);
+      border-radius: 18px;
+      padding: 18px 25px;
+
+      .invite-detail-wrapper {
+        .details-wrapper {
+          h1 {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #322e2f;
+            margin-bottom: 30px;
+          }
+
+          .share-link-wrapper {
+            h5 {
+              margin-bottom: 10px;
+            }
+
+            .img-share-wrapper {
+              .img-fluid {
+                height: 40px;
+                width: 40px;
+                margin-bottom: 15px;
+              }
+            }
+
+            .input-wrapper {
+              input {
+                padding: 11px 0px 11px 12px;
+              }
+
+              .img-fluid {
+                width: 43px;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .select-opponent-wrapper {
+    margin-top: 20px;
+
+    .select-opponent-card {
+      box-shadow: none;
+      max-width: 660px;
+      padding: 0px 25px 21px 25px;
+
+      .online-friends-btn-wrapper {
+        .button-invite {
+          padding: 8px 0px !important;
+          white-space: nowrap;
+          font-style: normal;
+          font-weight: 600 !important;
+          font-size: 14px !important;
+          line-height: 19px !important;
+          text-align: center;
+          color: #ffffff;
+          margin-right: 0px !important;
+        }
+
+        .button-online {
+          padding: 8px 0px !important;
+          white-space: nowrap;
+          font-style: normal;
+          font-weight: 600 !important;
+          font-size: 16px !important;
+          line-height: 19px !important;
+          text-align: center;
+          color: #ffffff;
+          margin-right: 0px !important;
+        }
+      }
+
+      .random-opponent {
+        padding: 0px 0px 0px 0px;
+        border: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {}

@@ -1,0 +1,1506 @@
+.custom-container {
+  padding: 0 100px;
+  width: 100%;
+
+  .top-count-wrapper {
+    justify-content: start;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 40px;
+
+    .counter-wrapper {
+      height: fit-content;
+
+      .counter-title {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-4px, -50%);
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 0;
+      }
+
+      .counter-lt-title {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 0;
+        border: 1px solid #ff6600;
+        border-left: 0;
+        padding: 2px 6px;
+        margin-left: -5px;
+        border-radius: 0 10px 10px 0;
+      }
+    }
+
+    .input-search-wrapper {
+      position: relative;
+      margin-right: 180px;
+
+      input {
+        background: rgba(227, 227, 227, 0.5);
+        border-radius: 23.5px;
+        height: 39px;
+        width: 39px;
+        border: none;
+        outline: none;
+        padding: 11px;
+        transition: 850ms;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+      }
+    }
+
+    .header-user {
+      right: 104px;
+      top: 16px;
+    }
+
+    .input-search-wrapper:hover input {
+      width: 200px;
+      transition: 850ms;
+      padding: 11px 11px 11px 44px;
+    }
+
+    .user-profile {
+      height: 47px;
+      width: 47px;
+      margin-right: 10px;
+    }
+
+    .user-name {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 20px;
+      color: #322e2f;
+      display: inline-block;
+      margin: 0 8px 0 0;
+    }
+  }
+
+  .first-slider {
+    .slick-next {
+      background-image: url("../../Assets/Img/next-btn.svg");
+      background-size: 100% 100%;
+      height: 20px;
+      width: 20px;
+      z-index: 1;
+    }
+
+    .slick-prev {
+      background-image: url("../../Assets/Img/prev-btn.svg");
+      background-size: 100% 100%;
+      height: 20px;
+      width: 20px;
+      z-index: 1;
+    }
+
+    .slick-next:before {
+      content: "";
+    }
+
+    .slick-prev:before {
+      content: "";
+    }
+
+    .slick-prev:hover,
+    .slick-prev:focus {
+      color: transparent;
+      outline: none;
+      background-image: url("../../Assets/Img/prev-btn.svg");
+    }
+
+    .slick-next:hover,
+    .slick-next:focus {
+      color: transparent;
+      outline: none;
+      background-image: url("../../Assets/Img/next-btn.svg");
+    }
+
+    .top-card-wrapper {
+      background: #ffffff;
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+      border-radius: 15px;
+      overflow: hidden;
+      text-align: center;
+      position: relative;
+
+      .default-border {
+        border: 2px solid transparent;
+        border-radius: 14px 14px 0 0;
+      }
+
+      img {
+        max-width: 168px;
+        width: 100%;
+        height: 111.93px;
+        margin: auto;
+        object-fit: contain;
+      }
+
+      .title-wrapper {
+        background: #6b78b7;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+          color: #ffffff;
+          margin-bottom: 0px;
+        }
+      }
+
+      .chip-wrapper {
+        position: absolute;
+        top: 14px;
+        right: 0;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        padding: 4px 8px;
+        border-radius: 10px 0px 0px 10px;
+      }
+    }
+  }
+
+  .tournaments-wrapper {
+    margin-bottom: 30px;
+
+    h2 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+      color: #322e2f;
+      margin-bottom: 20px;
+    }
+
+    .tournaments-card-wrapper {
+      .slick-slider {
+        padding-top: 27px;
+      }
+
+      .fill-img-dashboard {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: -webkit-fill-available;
+        height: 50px;
+        width: 50px;
+      }
+
+      .top-left-img {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        width: 16px;
+        height: 22px;
+      }
+
+      .top-right-img {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        width: 22px;
+        height: 22px;
+      }
+
+      .record-not-found {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        height: 55vh;
+
+        img {
+          width: 45px;
+          height: 45px;
+          margin-right: 25px;
+        }
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 35px;
+          line-height: 41px;
+          color: #a5a5a5;
+          margin-bottom: 0;
+        }
+      }
+
+      .slick-slide {
+        max-width: 350px !important;
+      }
+
+      .slick-next {
+        background-image: url("../../Assets/Img/next-btn.svg");
+        background-size: 100% 100%;
+        height: 20px;
+        width: 20px;
+        z-index: 1;
+      }
+
+      .slick-prev {
+        background-image: url("../../Assets/Img/prev-btn.svg");
+        background-size: 100% 100%;
+        height: 20px;
+        width: 20px;
+        z-index: 1;
+      }
+
+      .slick-next:before {
+        content: "";
+      }
+
+      .slick-prev:before {
+        content: "";
+      }
+
+      .slick-prev:hover,
+      .slick-prev:focus {
+        color: transparent;
+        outline: none;
+        background-image: url("../../Assets/Img/prev-btn.svg");
+      }
+
+      .slick-next:hover,
+      .slick-next:focus {
+        color: transparent;
+        outline: none;
+        background-image: url("../../Assets/Img/next-btn.svg");
+      }
+
+      .tournaments-card {
+        background: #ffffff;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+        border-radius: 19px;
+        padding: 20px 22px;
+        text-align: center;
+        min-height: 300px;
+        position: relative;
+
+        .img-wrapper {
+          border: 4px solid #d8d8d8;
+          border-radius: 50%;
+          height: 77px;
+          width: 77px;
+          margin: auto;
+          margin-bottom: 20px;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        .title-wrapper {
+          h3 {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #322e2f;
+            margin-bottom: 12px;
+          }
+
+          .description {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: #a5a5a5;
+          }
+
+          p {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%, 0px);
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #19af00;
+            padding: 4px 17px;
+            margin-bottom: 0;
+            width: fit-content;
+            background: rgba(25, 175, 0, 0.2);
+            border-radius: 13.5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.access-code-modal {
+  .modal-content {
+    max-width: 607px;
+    background: #ffffff;
+    box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    padding: 22px;
+  }
+
+  .access-code-wrapper {
+    text-align: center;
+
+    .close-icon-wrapper {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    h4 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+      color: #322e2f;
+      margin: 10px 0 8px 0;
+    }
+
+    p {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #a5a5a5;
+      margin-bottom: 60px;
+    }
+
+    .access_code-input {
+      width: 100%;
+      height: 51px;
+      border: 1px solid #dadada;
+      border-radius: 7px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #322e2f;
+      padding: 16px 22px;
+    }
+
+    .mb-69 {
+      margin-bottom: 69px;
+    }
+
+    .input-access_code-error {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #e74c3c;
+      text-align: start;
+      margin: 5px 0 60px 0;
+    }
+
+    button {
+      background: #1a2b51;
+      border-radius: 10px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      padding: 14px 42px;
+    }
+  }
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.modal-content {
+  background: #ffffff;
+  box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.blockchain-term {
+  .close-icon-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 22px 22px 0px 22px;
+  }
+
+  .details-wrapper {
+    padding: 0 40px 40px 40px;
+
+    .mobile-view {
+      .img-back-modal-icon {
+        display: none;
+      }
+    }
+
+    h1 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+      color: #5e00f6;
+      width: 100%;
+    }
+
+    .description-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+
+      img {
+        margin-right: 35px;
+        height: 66px;
+        width: 66px;
+      }
+
+      .description-modal {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #a5a5a5;
+        margin-bottom: 0;
+
+        .show-more-text {
+          color: #5e00f6;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .button-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 42px;
+
+      button {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        padding: 12px 53px;
+        background: #1a2b51;
+        border-radius: 10px;
+        border: none;
+      }
+
+      .avatar-wrapper {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 45.96px;
+          height: 45.96px;
+          margin-right: 15px;
+        }
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: #322e2f;
+          margin: 0;
+        }
+      }
+    }
+
+    .progress-wrapper {
+      margin-bottom: 50px;
+
+      .progress-track {
+        background: #ffffff;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 9.5px;
+        width: 100%;
+        padding: 2px;
+        margin-bottom: 9px;
+
+        .current-progress {
+          background: #cfcb00;
+          border-radius: 9.5px;
+          height: 15px;
+        }
+      }
+
+      .title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          color: #a5a5a5;
+          margin: 0;
+        }
+
+        h6 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 18px;
+          color: #322e2f;
+          margin: 0;
+        }
+      }
+    }
+
+    .team-info-card {
+      position: relative;
+      background: #ffffff;
+      box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.2);
+      border-radius: 14px;
+      padding: 2px 44px 19px 44px;
+      margin-bottom: 60px;
+
+      .term-title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 7px 0px 17px 0px;
+
+        h4 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 18px;
+          color: #322e2f;
+          margin: 0;
+        }
+      }
+
+      p {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #a5a5a5;
+        margin-bottom: 20px;
+      }
+
+      .button-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+
+        button:nth-child(1) {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          color: #cfcb00;
+          background: #ffffff;
+          border: 0.5px solid #cfcb00;
+          border-radius: 5px;
+          padding: 8px 21px;
+        }
+
+        button:nth-child(2) {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          color: #44546a;
+          background: #ffffff;
+          border: 0.5px solid #44546a;
+          border-radius: 5px;
+          padding: 8px 21px;
+        }
+      }
+    }
+
+    .team-info-card-lock-wrapper {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: rgba(240, 240, 240, 0.7);
+      border: 1px solid #d9d9d9;
+      backdrop-filter: blur(2px);
+      border-radius: 11px;
+
+      img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .paly-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        background: #ed7d31;
+        border-radius: 10px;
+        border: none;
+        padding: 11px 54px;
+
+        img {
+          width: 24px;
+          height: 24px;
+          margin-right: 20px;
+        }
+
+        span {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .custom-container {
+    padding: 0 60px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .blockchain-term-info-modal {
+    max-width: 607px;
+
+    .modal-content {
+      .blockchain-term {
+        .blockchain-term {
+          .details-wrapper {
+            .mobile-view {
+              .img-fluid-mobile {
+                display: none !important;
+              }
+
+              h1 {
+                margin-bottom: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .custom-container {
+    .tournaments-wrapper {
+      .tournaments-card-wrapper {
+        .tournaments-card {
+          // min-height: 360px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .custom-container {
+    .tournaments-wrapper {
+      .tournaments-card-wrapper {
+        .tournaments-card {
+          // min-height: 380px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+
+  .blockchain-term {
+    .modal-content {
+      .blockchain-term {
+        .close-icon-wrapper {
+          padding-bottom: 0px !important;
+        }
+
+        .details-wrapper {
+          padding: 0px 10px 0px 10px;
+
+          .mobile-view {
+            .img-fluid-mobile {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .blockchain-term-info-modal {
+    max-width: 607px;
+
+    .modal-content {
+      .blockchain-term {
+        .blockchain-term {
+          .details-wrapper {
+            .mobile-view {
+              .img-fluid-mobile {
+                display: none !important;
+              }
+
+              h1 {
+                margin-bottom: 40px;
+                text-align: center;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .custom-container {
+    padding: 0 34px;
+
+    .top-count-wrapper {
+      margin-right: 40px;
+    }
+
+    .first-slider {
+      // .slick-next {
+      //   display: none !important;
+      // }
+
+      // .slick-prev {
+      //   display: none !important;
+      // }
+
+      .slick-next:before {
+        content: "";
+      }
+
+      .slick-prev:before {
+        content: "";
+      }
+
+      .top-card-wrapper {
+        background: #ffffff;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+        border-radius: 15px;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+
+        .default-border {
+          border: 2px solid transparent;
+          border-radius: 14px 14px 0 0;
+        }
+
+        img {
+          width: 168px;
+          height: 111.93px;
+          margin: auto;
+          object-fit: contain;
+        }
+
+        .title-wrapper {
+          background: #6b78b7;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          h3 {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 0px;
+          }
+        }
+
+        .chip-wrapper {
+          position: absolute;
+          top: 14px;
+          right: 0;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          padding: 4px 8px;
+          border-radius: 10px 0px 0px 10px;
+        }
+      }
+    }
+  }
+
+  .blockchain-term {
+    margin-bottom: 64px;
+
+    .close-icon-wrapper {
+      padding: 0px;
+
+      .img-fluid {
+        display: none;
+      }
+    }
+
+    .details-wrapper {
+      padding: 0px 25px 0px 25px !important;
+
+      .mobile-view {
+        margin: 18px 0px 40px 0px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #dedede;
+
+        h1 {
+          align-items: center;
+          margin: auto;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          color: #5e00f6;
+        }
+
+        .img-back-modal-icon {
+          display: block;
+          align-self: flex-start;
+        }
+      }
+
+      .description-wrapper {
+        margin-bottom: 39px;
+
+        .img-fluid {
+          height: 55px;
+          width: 55px;
+          margin-right: 16px;
+        }
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 15px;
+          color: #a5a5a5;
+        }
+      }
+
+      .button-wrapper {
+        button {
+          padding: 12px 35px;
+        }
+
+        .avatar-wrapper {
+          .img-fluid {
+            height: 34px;
+            width: 34px;
+          }
+
+          p {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #322e2f;
+          }
+        }
+      }
+
+      .progress-wrapper {
+        margin-bottom: 60px;
+      }
+
+      .team-info-card {
+        padding: 10px 25px 20px 25px;
+        margin-bottom: 70px;
+
+        .term-title-wrapper {
+          margin-bottom: 20px;
+
+          h4 {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: right;
+            color: #322e2f;
+          }
+        }
+
+        p {
+          margin-bottom: 25px;
+        }
+
+        .button-wrapper {
+          display: flex;
+          justify-content: space-around;
+
+          button {
+            white-space: nowrap;
+            padding: 8px 21px;
+          }
+        }
+      }
+
+      .paly-btn {
+        button {
+          padding: 11px 33px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .blockchain-term {
+    .modal-content {
+      .blockchain-term {
+        .details-wrapper {
+          padding: 0px 10px 0px 10px;
+
+          .mobile-view {
+            .img-fluid-mobile {
+              display: none;
+            }
+          }
+
+          .team-info-card {
+            padding: 2px 20px 19px 20px;
+          }
+        }
+      }
+    }
+
+    .details-wrapper {
+      .team-info-card {
+        padding: 2px 20px 19px 20px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .blockchain-term {
+    .close-icon-wrapper {
+      padding: 0px;
+
+      .img-fluid {
+        display: none;
+      }
+    }
+
+    .details-wrapper {
+      padding: 0px 10px 0px 10px;
+
+      .mobile-view {
+        margin: 18px 0px 40px 0px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #dedede;
+
+        h1 {
+          align-items: center;
+          margin: auto;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          color: #5e00f6;
+        }
+      }
+
+      .description-wrapper {
+        margin-bottom: 39px;
+
+        .img-fluid {
+          height: 55px;
+          width: 55px;
+          margin-right: 16px;
+        }
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 15px;
+          color: #a5a5a5;
+        }
+      }
+
+      .button-wrapper {
+        button {
+          padding: 12px 35px;
+        }
+
+        .avatar-wrapper {
+          .img-fluid {
+            height: 34px;
+            width: 34px;
+          }
+
+          p {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #322e2f;
+          }
+        }
+      }
+
+      .progress-wrapper {
+        margin-bottom: 60px;
+      }
+
+      .team-info-card {
+        padding: 10px 25px 20px 25px;
+        margin-bottom: 70px;
+
+        .term-title-wrapper {
+          margin-bottom: 20px;
+
+          h4 {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: right;
+            color: #322e2f;
+          }
+        }
+
+        p {
+          margin-bottom: 25px;
+        }
+
+        .button-wrapper {
+          display: flex;
+          justify-content: space-around;
+
+          .join-button {
+            padding: 5px 6px !important;
+          }
+
+          .create-button {
+            padding: 5px 6px !important;
+          }
+        }
+      }
+
+      .paly-btn {
+        padding-bottom: 15px;
+
+        button {
+          padding: 11px 33px;
+        }
+      }
+    }
+  }
+
+  .details-wrapper {
+    padding: 2px 20px 0px 20px !important;
+  }
+}
+
+.tournaments-wrapper {
+  margin-bottom: 100px;
+
+  h2 {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #322e2f;
+    margin-bottom: 20px;
+  }
+
+  .tournaments-card-wrapper {
+    .slick-slider {
+      padding-top: 27px;
+    }
+
+    .record-not-found {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      // margin-bottom: 20px;
+
+      img {
+        width: 38px;
+        height: 38px;
+        margin-right: 14px;
+      }
+
+      p {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 27px;
+        color: #a5a5a5;
+        margin-bottom: 0;
+      }
+    }
+
+    // .slick-next {
+    //   display: none !important;
+    // }
+
+    // .slick-prev {
+    //   display: none !important;
+    // }
+
+    .slick-next:before {
+      content: "";
+    }
+
+    .slick-prev:before {
+      content: "";
+    }
+
+    .slick-prev:hover,
+    .slick-prev:focus {
+      color: transparent;
+      outline: none;
+      background-image: url("../../Assets/Img/prev-btn.svg");
+    }
+
+    .slick-next:hover,
+    .slick-next:focus {
+      color: transparent;
+      outline: none;
+      background-image: url("../../Assets/Img/next-btn.svg");
+    }
+
+    .tournaments-card {
+      background: #ffffff;
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+      border-radius: 19px;
+      padding: 20px 22px;
+      text-align: center;
+      // min-height: 350px;
+      margin-bottom: 40px;
+
+      .img-wrapper {
+        border: 4px solid #d8d8d8;
+        border-radius: 50%;
+        height: 77px;
+        width: 77px;
+        margin: auto;
+        margin-bottom: 20px;
+        overflow: hidden;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .title-wrapper {
+        h3 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+          color: #322e2f;
+          margin-bottom: 12px;
+        }
+
+        .description {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          text-align: center;
+          color: #a5a5a5;
+        }
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          color: #19af00;
+          padding: 4px 17px;
+          margin-bottom: 0;
+          width: fit-content;
+          text-align: center;
+          background: rgba(25, 175, 0, 0.2);
+          border-radius: 13.5px;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+.blockchain-term {
+  .details-wrapper {
+    padding: 0 40px 40px 40px;
+
+    .button-wrapper {
+      button {
+        padding: 12px 18px;
+      }
+    }
+
+    .progress-wrapper {
+      margin-bottom: 50px;
+
+      .progress-track {
+        background: #ffffff;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 9.5px;
+        width: 100%;
+        padding: 2px;
+        margin-bottom: 9px;
+
+        .current-progress {
+          background: #cfcb00;
+          border-radius: 9.5px;
+          height: 15px;
+        }
+      }
+
+      .title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          color: #a5a5a5;
+          margin: 0;
+        }
+
+        h6 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 18px;
+          color: #322e2f;
+          margin: 0;
+        }
+      }
+    }
+
+    .team-info-card {
+      background: #ffffff;
+      box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.2);
+      border-radius: 14px;
+      padding: 2px 44px 19px 44px;
+      margin-bottom: 60px;
+
+      .term-title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 17px;
+
+        h4 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 18px;
+          color: #322e2f;
+          margin: 0;
+        }
+      }
+
+      p {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #a5a5a5;
+        margin-bottom: 20px;
+      }
+
+      .button-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+
+        button:nth-child(1) {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          color: #cfcb00;
+          background: #ffffff;
+          border: 0.5px solid #cfcb00;
+          border-radius: 5px;
+          padding: 8px 21px;
+        }
+
+        button:nth-child(2) {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          color: #44546a;
+          background: #ffffff;
+          border: 0.5px solid #44546a;
+          border-radius: 5px;
+          padding: 8px 21px;
+        }
+      }
+    }
+
+    .paly-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        background: #ed7d31;
+        border-radius: 10px;
+        border: none;
+        padding: 11px 54px;
+
+        img {
+          width: 24px;
+          height: 24px;
+          margin-right: 20px;
+        }
+
+        span {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.ml-50 {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 367px) {
+  .custom-container {
+    .tournaments-wrapper {
+      .tournaments-card-wrapper {
+        .tournaments-card {
+          background: #ffffff;
+          box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+          border-radius: 19px;
+          padding: 20px 22px;
+          text-align: center;
+          // min-height: 370px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

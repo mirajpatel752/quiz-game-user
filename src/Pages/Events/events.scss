@@ -1,0 +1,32 @@
+.topic-modal {
+    .topic-user-wrapper {
+        padding: 25px 25px 30px 25px;
+        .close-icon-wrapper {
+            img {
+                cursor: pointer;
+            }
+        }
+        .your-access-text {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 21px;
+            text-align: center;
+            margin: 20px 50px 0px 20px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .topic-modal {
+        .modal-content {
+            .topic-user-wrapper {
+                padding: 25px 15px 30px 15px;   
+                .your-access-text{
+                    margin: 10px 15px 0px 15px;
+
+                }
+            }
+        }
+    }
+}

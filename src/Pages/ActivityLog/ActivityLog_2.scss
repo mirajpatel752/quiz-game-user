@@ -1,0 +1,1419 @@
+.activity-log-page-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 80px 0px 80px 0px;
+
+
+  
+
+  .activity-log-card {
+    background: #ffffff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
+    max-width: 660px;
+    width: 100%;
+    padding: 24px 50px 21px 50px;
+    height: fit-content;
+
+    .activity-card-title-wrapper {
+      display: flex;
+      align-items: center;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #dedede;
+      margin-bottom: 14px;
+
+      .activity-log-title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        h3 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 26px;
+          text-align: center;
+          color: #322e2f;
+          margin: 0px;
+        }
+      }
+    }
+  }
+
+  .won-loss-draw-card {
+    background: #ffffff;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 14px;
+    cursor: pointer;
+
+    .topic-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 13px;
+
+      .topic-img {
+        width: 28px;
+        height: 28px;
+        margin-right: 12px;
+      }
+
+      .topic-name {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #322e2f;
+        margin-bottom: 0;
+      }
+    }
+
+    .lt-wrapper {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0%, -50%);
+      padding: 3px;
+      background: rgba(0, 176, 80, 0.2);
+      border-radius: 15.5px 0px 0px 15.5px;
+
+      span {
+        margin-left: 4px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ff6600;
+      }
+    }
+
+    .result-button {
+      margin-bottom: 10px;
+
+      .won-button {
+        padding: 6px;
+        background: #7fba1f;
+        border-radius: 4px;
+        border: none;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      .lost-button {
+        padding: 6px;
+        background: #ff0000;
+        border-radius: 4px;
+        border: none;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      .draw-button {
+        padding: 6px;
+        background: #0575c0;
+        border-radius: 4px;
+        border: none;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+
+    .opponent-user-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #a5a5a5;
+        margin-bottom: 0;
+
+        span {
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .declined-expired-withdrawn-card {
+    background: #ffffff;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 14px;
+
+    .topic-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 13px;
+
+      .topic-img {
+        width: 28px;
+        height: 28px;
+        margin-right: 12px;
+      }
+
+      .topic-name {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #322e2f;
+        margin-bottom: 0;
+      }
+    }
+
+    .close-notification {
+      position: absolute;
+      top: 7px;
+      right: 14px;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    .result-button {
+      .declined-button {
+        padding: 6px;
+        background: #808080;
+        border-radius: 4px;
+        border: none;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        cursor: default;
+      }
+
+      .expired-button {
+        padding: 6px;
+        background: #d0cece;
+        border-radius: 4px;
+        border: none;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        cursor: default;
+      }
+
+      .withdrawn-button {
+        padding: 6px;
+        background: #adb9ca;
+        border-radius: 4px;
+        border: none;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        cursor: default;
+      }
+    }
+
+    .lt-wrapper-loss-won {
+      display: flex;
+      align-items: center;
+
+      .loss_learning_token {
+        background: #ff6600;
+        border-radius: 11.5px 0 0 11.5px;
+        padding: 7px 16px 8px 11px;
+        height: fit-content;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 12px;
+        color: #ffffff;
+        margin-right: -8px;
+      }
+
+      img {
+        z-index: 2;
+        position: relative;
+      }
+
+      .won_learning_token {
+        background: #ff6600;
+        border-radius: 0 11.5px 11.5px 0;
+        padding: 7px 11px 8px 16px;
+        height: fit-content;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 12px;
+        color: #ffffff;
+        margin-left: -8px;
+      }
+    }
+
+    .opponent-user-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #a5a5a5;
+        margin-bottom: 0;
+
+        span {
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .withdraw-play-accept-decline-card {
+    background: #ffffff;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 14px;
+
+    .topic-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+
+      .topic-img {
+        width: 28px;
+        height: 28px;
+        margin-right: 12px;
+      }
+
+      .topic-name {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #322e2f;
+        margin-bottom: 0;
+      }
+    }
+
+    .lt-wrapper-loss-won {
+      display: flex;
+      align-items: center;
+
+      .loss_learning_token {
+        background: #ff6600;
+        border-radius: 11.5px 0 0 11.5px;
+        padding: 7px 16px 8px 11px;
+        height: fit-content;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 12px;
+        color: #ffffff;
+        margin-right: -8px;
+      }
+
+      img {
+        z-index: 2;
+        position: relative;
+      }
+
+      .won_learning_token {
+        background: #ff6600;
+        border-radius: 0 11.5px 11.5px 0;
+        padding: 7px 11px 8px 16px;
+        height: fit-content;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 12px;
+        color: #ffffff;
+        margin-left: -8px;
+      }
+    }
+
+    .opponent-user-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #a5a5a5;
+        margin-bottom: 0;
+
+        span {
+          color: #000000;
+        }
+      }
+    }
+
+    .challenge-sent {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #ea9601;
+      margin-bottom: 0;
+    }
+
+    .awaiting-opponent {
+      background: #aa7d4b;
+      border-radius: 4px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #ffffff;
+      padding: 7px 10px;
+      margin-bottom: 0;
+      border: none;
+    }
+
+    .challenge-accepted {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #7fba1f;
+      margin-bottom: 0;
+    }
+
+    .challenge-received {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #aca800;
+      margin-bottom: 0;
+    }
+
+    .withdraw-button {
+      background: #ea9601;
+      border-radius: 4px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      padding: 6px 13px;
+    }
+
+    .play-button {
+      background: #1a2b51;
+      border-radius: 4px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      padding: 6px 13px;
+    }
+
+    .accept-button {
+      background: #5cd149;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      padding: 4px 8px;
+      margin-right: 10px;
+    }
+
+    .decline-button {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: #ec4648;
+      border: 1px solid #ec4648;
+      border-radius: 4px;
+      padding: 4px 8px;
+      background: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .activity-log-page-wrapper {
+    margin: 0px 0px 67px 0px;
+
+    .activity-log-card {
+      box-shadow: none;
+      border-radius: 6px;
+      max-width: 630px;
+      margin-bottom: 0px;
+      padding: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .activity-log-page-wrapper {
+    .activity-log-card {
+      .activity-card-title-wrapper {
+        display: flex;
+        align-items: center;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 14px;
+
+        .activity-log-title-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          h3 {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #322e2f;
+            margin: 0px;
+          }
+        }
+      }
+    }
+
+    .won-loss-draw-card {
+      padding: 20px;
+      margin-bottom: 14px;
+
+      .topic-wrapper {
+        margin-bottom: 13px;
+
+        .topic-img {
+          width: 28px;
+          height: 28px;
+          margin-right: 12px;
+        }
+
+        .topic-name {
+          font-size: 18px;
+        }
+      }
+
+      .lt-wrapper {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0%, -50%);
+        padding: 3px;
+        background: rgba(0, 176, 80, 0.2);
+        border-radius: 15.5px 0px 0px 15.5px;
+
+        span {
+          margin-left: 4px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          color: #ff6600;
+        }
+      }
+
+      .result-button {
+        margin-bottom: 10px;
+
+        .won-button {
+          padding: 6px;
+          background: #7fba1f;
+          border-radius: 4px;
+          border: none;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+          text-align: center;
+          color: #ffffff;
+          cursor: default;
+        }
+
+        .lost-button {
+          padding: 6px;
+          background: #ff0000;
+          border-radius: 4px;
+          border: none;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+          text-align: center;
+          color: #ffffff;
+          cursor: default;
+        }
+
+        .draw-button {
+          padding: 6px;
+          background: #0575c0;
+          border-radius: 4px;
+          border: none;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+          text-align: center;
+          color: #ffffff;
+          cursor: default;
+        }
+      }
+
+      .opponent-user-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: #a5a5a5;
+          margin-bottom: 0;
+
+          span {
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    .declined-expired-withdrawn-card {
+      background: #ffffff;
+      box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      padding: 20px;
+      position: relative;
+      margin-bottom: 14px;
+
+      .topic-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 13px;
+
+        .topic-img {
+          width: 28px;
+          height: 28px;
+          margin-right: 12px;
+        }
+
+        .topic-name {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: #322e2f;
+          margin-bottom: 0;
+        }
+      }
+
+      .result-button {
+        .declined-button {
+          padding: 6px;
+          background: #808080;
+          border-radius: 4px;
+          border: none;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+          text-align: center;
+          color: #ffffff;
+        }
+
+        .expired-button {
+          padding: 6px;
+          background: #d0cece;
+          border-radius: 4px;
+          border: none;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+          text-align: center;
+          color: #ffffff;
+        }
+
+        .withdrawn-button {
+          padding: 6px;
+          background: #adb9ca;
+          border-radius: 4px;
+          border: none;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+
+      .lt-wrapper-loss-won {
+        display: flex;
+        align-items: center;
+
+        .loss_learning_token {
+          background: #ff6600;
+          border-radius: 11.5px 0 0 11.5px;
+          padding: 7px 16px 8px 11px;
+          height: fit-content;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 12px;
+          color: #ffffff;
+          margin-right: -8px;
+        }
+
+        img {
+          z-index: 2;
+          position: relative;
+        }
+
+        .won_learning_token {
+          background: #ff6600;
+          border-radius: 0 11.5px 11.5px 0;
+          padding: 7px 11px 8px 16px;
+          height: fit-content;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 12px;
+          color: #ffffff;
+          margin-left: -8px;
+        }
+      }
+
+      .opponent-user-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: #a5a5a5;
+          margin-bottom: 0;
+
+          span {
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    .withdraw-play-accept-decline-card {
+      background: #ffffff;
+      box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      padding: 20px;
+      position: relative;
+      margin-bottom: 14px;
+
+      .topic-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+
+        .topic-img {
+          width: 28px;
+          height: 28px;
+          margin-right: 12px;
+        }
+
+        .topic-name {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: #322e2f;
+          margin-bottom: 0;
+        }
+      }
+
+      .lt-wrapper-loss-won {
+        display: flex;
+        align-items: center;
+
+        .loss_learning_token {
+          background: #ff6600;
+          border-radius: 11.5px 0 0 11.5px;
+          padding: 7px 16px 8px 11px;
+          height: fit-content;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 12px;
+          color: #ffffff;
+          margin-right: -8px;
+        }
+
+        img {
+          z-index: 2;
+          position: relative;
+        }
+
+        .won_learning_token {
+          background: #ff6600;
+          border-radius: 0 11.5px 11.5px 0;
+          padding: 7px 11px 8px 16px;
+          height: fit-content;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 12px;
+          color: #ffffff;
+          margin-left: -8px;
+        }
+      }
+
+      .opponent-user-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: #a5a5a5;
+          margin-bottom: 0;
+
+          span {
+            color: #000000;
+          }
+        }
+      }
+
+      .challenge-sent {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        color: #ea9601;
+        margin-bottom: 0;
+      }
+
+      .awaiting-opponent {
+        background: #aa7d4b;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        padding: 7px 10px;
+        margin-bottom: 0;
+      }
+
+      .challenge-accepted {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        color: #7fba1f;
+        margin-bottom: 0;
+      }
+
+      .challenge-received {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        color: #aca800;
+        margin-bottom: 0;
+      }
+
+      .withdraw-button {
+        background: #ea9601;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        border: none;
+        padding: 6px 13px;
+      }
+
+      .play-button {
+        background: #1a2b51;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        border: none;
+        padding: 6px 13px;
+      }
+
+      .accept-button {
+        background: #5cd149;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #ffffff;
+        border: none;
+        padding: 4px 8px;
+        margin-right: 10px;
+      }
+
+      .decline-button {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #ec4648;
+        border: 1px solid #ec4648;
+        border-radius: 4px;
+        padding: 4px 8px;
+        background: transparent;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .activity-log-page-wrapper {
+    .activity-log-card {
+      .activity-card-title-wrapper {
+        display: flex;
+        align-items: center;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 14px;
+
+        .activity-log-title-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          h3 {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #322e2f;
+            margin: 0px;
+          }
+        }
+      }
+    }
+
+    .won-loss-draw-card {
+      padding: 14px;
+      margin-bottom: 14px;
+
+      .topic-wrapper {
+        margin-bottom: 13px;
+
+        .topic-img {
+          width: 28px;
+          height: 28px;
+          margin-right: 12px;
+        }
+
+        .topic-name {
+          font-size: 16px;
+        }
+      }
+
+      .lt-wrapper {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0%, -50%);
+        padding: 3px;
+        background: rgba(0, 176, 80, 0.2);
+        border-radius: 15.5px 0px 0px 15.5px;
+
+        span {
+          margin-left: 4px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          color: #ff6600;
+        }
+      }
+
+      .result-button {
+        margin-bottom: 10px;
+
+        .won-button {
+          padding: 4px 6px;
+          background: #7fba1f;
+          border-radius: 4px;
+          border: none;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 19px;
+          text-align: center;
+          color: #ffffff;
+          cursor: default;
+        }
+
+        .lost-button {
+          padding: 4px 6px;
+          background: #ff0000;
+          border-radius: 4px;
+          border: none;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 19px;
+          text-align: center;
+          color: #ffffff;
+          cursor: default;
+        }
+
+        .draw-button {
+          padding: 4px 6px;
+          background: #0575c0;
+          border-radius: 4px;
+          border: none;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 19px;
+          text-align: center;
+          color: #ffffff;
+          cursor: default;
+        }
+      }
+
+      .opponent-user-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21px;
+          color: #a5a5a5;
+          margin-bottom: 0;
+
+          span {
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    .declined-expired-withdrawn-card {
+      background: #ffffff;
+      box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      padding: 14px;
+      position: relative;
+      margin-bottom: 14px;
+
+      .topic-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 13px;
+
+        .topic-img {
+          width: 28px;
+          height: 28px;
+          margin-right: 12px;
+        }
+
+        .topic-name {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #322e2f;
+          margin-bottom: 0;
+        }
+      }
+
+      .result-button {
+        .declined-button {
+          padding: 4px 6px;
+          background: #808080;
+          border-radius: 4px;
+          border: none;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 19px;
+          text-align: center;
+          color: #ffffff;
+        }
+
+        .expired-button {
+          padding: 4px 6px;
+          background: #d0cece;
+          border-radius: 4px;
+          border: none;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 19px;
+          text-align: center;
+          color: #ffffff;
+        }
+
+        .withdrawn-button {
+          padding: 4px 6px;
+          background: #adb9ca;
+          border-radius: 4px;
+          border: none;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 19px;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+
+      .lt-wrapper-loss-won {
+        display: flex;
+        align-items: center;
+
+        .loss_learning_token {
+          background: #ff6600;
+          border-radius: 11.5px 0 0 11.5px;
+          padding: 7px 16px 8px 11px;
+          height: fit-content;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 12px;
+          color: #ffffff;
+          margin-right: -10px;
+        }
+
+        img {
+          z-index: 2;
+          position: relative;
+        }
+
+        .won_learning_token {
+          background: #ff6600;
+          border-radius: 0 11.5px 11.5px 0;
+          padding: 7px 11px 8px 16px;
+          height: fit-content;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 12px;
+          color: #ffffff;
+          margin-left: -10px;
+        }
+      }
+
+      .opponent-user-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21px;
+          color: #a5a5a5;
+          margin-bottom: 0;
+
+          span {
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    .withdraw-play-accept-decline-card {
+      background: #ffffff;
+      box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      padding: 14px;
+      position: relative;
+      margin-bottom: 14px;
+
+      .topic-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+
+        .topic-img {
+          width: 28px;
+          height: 28px;
+          margin-right: 12px;
+        }
+
+        .topic-name {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #322e2f;
+          margin-bottom: 0;
+        }
+      }
+
+      .lt-wrapper-loss-won {
+        display: flex;
+        align-items: center;
+
+        .loss_learning_token {
+          background: #ff6600;
+          border-radius: 11.5px 0 0 11.5px;
+          padding: 7px 16px 8px 11px;
+          height: fit-content;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 12px;
+          color: #ffffff;
+          margin-right: -10px;
+        }
+
+        img {
+          z-index: 2;
+          position: relative;
+        }
+
+        .won_learning_token {
+          background: #ff6600;
+          border-radius: 0 11.5px 11.5px 0;
+          padding: 7px 11px 8px 16px;
+          height: fit-content;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 12px;
+          color: #ffffff;
+          margin-left: -10px;
+        }
+      }
+
+      .opponent-user-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21px;
+          color: #a5a5a5;
+          margin-bottom: 0;
+
+          span {
+            color: #000000;
+          }
+        }
+      }
+
+      .challenge-sent {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+        color: #ea9601;
+        margin-bottom: 0;
+      }
+
+      .awaiting-opponent {
+        background: #aa7d4b;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        text-align: center;
+        color: #ffffff;
+        padding: 4px 10px;
+        margin-bottom: 0;
+      }
+
+      .awaiting-opponent-img {
+        height: 22px;
+        width: 22px;
+      }
+
+      .challenge-accepted {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+        color: #7fba1f;
+        margin-bottom: 0;
+      }
+
+      .challenge-received {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+        color: #aca800;
+        margin-bottom: 0;
+      }
+
+      .withdraw-button {
+        background: #ea9601;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        border: none;
+        padding: 4px 7px;
+      }
+
+      .play-button {
+        background: #1a2b51;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        border: none;
+        padding: 4px 10px;
+      }
+
+      .accept-button {
+        background: #5cd149;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #ffffff;
+        border: none;
+        padding: 4px 8px;
+        margin-right: 10px;
+      }
+
+      .decline-button {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #ec4648;
+        border: 1px solid #ec4648;
+        border-radius: 4px;
+        padding: 4px 8px;
+        background: transparent;
+      }
+    }
+  }
+}
