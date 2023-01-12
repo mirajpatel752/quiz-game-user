@@ -355,14 +355,7 @@ const DashBoard = () => {
                     </div>
                     <div className="d-md-flex d-none">
                       <div className="d-flex align-items-center">
-                        {/* <div className="input-search-wrapper">
-                        <input name="user" id="user" placeholder="" />
-                        <img
-                          src={require("../../Assets/Img/search.svg").default}
-                          alt=""
-                          className="img-fluid"
-                        />
-                      </div> */}
+                 
                       </div>
                     </div>
                     <UserDetails />
