@@ -6,7 +6,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 import AuthVerify from "./common/AuthVerify";
 import { UNSAFE_NavigationContext } from "react-router-dom";
 
-// import scrollIntoView from "scroll-into-view-if-needed";
 
 const App = () => {
   const navigate = useNavigate();

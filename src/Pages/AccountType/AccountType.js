@@ -7,7 +7,7 @@ import useEncryption from "../../customHook/useEncryption";
 
 const AccountType = () => {
   const [accountTypes, setAccountTypes] = useState([]);
-  const { encryptData, decryptData } = useEncryption();
+  const {  decryptData } = useEncryption();
   const [select, setSelect] = useState(null);
 
   const selectClicked = (data) => {

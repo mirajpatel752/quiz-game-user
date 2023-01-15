@@ -27,7 +27,6 @@ import Activity from "../../Assets/Img/activity.svg";
 import ActivityActive from "../../Assets/Img/activity-active.svg";
 import Settings from "../../Assets/Img/settings.svg";
 import SettingsActive from "../../Assets/Img/settings-active.svg";
-import { toast } from "react-toastify";
 
 function Sidebar() {
   const { pathname } = useLocation();

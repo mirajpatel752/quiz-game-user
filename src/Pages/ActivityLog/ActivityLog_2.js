@@ -98,7 +98,6 @@ const ActivityLog_2 = () => {
   const renderTime = ({ remainingTime }) => {
     if (remainingTime === 0) {
       setIsWaiting(false);
-      // setIsPending(true)
       navigate("/question", { state: true });
     } else {
       return (
@@ -426,11 +425,7 @@ const ActivityLog_2 = () => {
             },
           });
           setIsStatus(true);
-          // if (isWide) {
-          //   setIsStatus(true)
-          // } else {
-          //   navigate("/won",{ state: resultData })
-          // }
+       
           setISWinner(result);
         } else {
           toast.error(res?.data?.message);

@@ -143,7 +143,6 @@ const DeshBoardPlay = ({ setIsPlay, view, openAccess }) => {
   return (
     <>
       <div className="d-flex">
-        {/* {state && <Sidebar />} */}
 
         <div className="blockchain-term w-100">
           <div className="close-icon-wrapper">
@@ -172,11 +171,7 @@ const DeshBoardPlay = ({ setIsPlay, view, openAccess }) => {
                 alt=""
                 className="img-fluid"
               />
-              {/* <p>
-                {" "}
-                {data?.description?.slice(0, 90)}
-                {data?.description?.length > 90 && "..."}{" "}
-              </p> */}
+          
               <ShowMoreText
                 className="description-modal"
                 lines={2}

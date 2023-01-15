@@ -257,9 +257,6 @@ const OnlineFriends = () => {
       };
       setIsChallenge(true);
       setSelectedUser({
-        // id: state?.result?.opponentUser.id,
-        // avatar: state?.result?.opponentUser.avatar,
-        // user_name: state?.result?.opponentUser?.user_name,
         id: state?.opponentUser.id,
         avatar: state?.opponentUser.avatar,
         user_name: state?.opponentUser?.user_name,
@@ -267,9 +264,6 @@ const OnlineFriends = () => {
       });
     } else if (state?.isModal === false) {
       topicDetailsMemo = {
-        // icon: state?.result?.topic?.top_icon,
-        // name: state?.result?.topic?.top_name,
-        // id: state?.result?.topic?.topic_id,
         icon: state?.topic?.top_icon,
         name: state?.topic?.top_name,
         id: state?.topic?.topic_id,
@@ -357,21 +351,7 @@ const OnlineFriends = () => {
                   )}
                 </div>
               </div>
-              {/* <div className="d-flex justify-content-center pt-4">
-              {totalPage >= 1 && (
-                <Pagination
-                  size={isWide ? "medium" : "small"}
-                  className="text-center"
-                  count={
-                    totalPage % 1 == 0
-                      ? Math.floor(totalPage)
-                      : Math.floor(totalPage) + 1
-                  }
-                  page={currentPage}
-                  onChange={handleChange}
-                />
-              )}
-            </div> */}
+              
             </div>
             <UserDetails />
           </div>
