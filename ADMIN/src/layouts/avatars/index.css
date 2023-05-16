@@ -1,0 +1,14 @@
+.description_title_extra{
+    max-width: 430px;
+  }
+  
+  @media screen and (max-width: 1477px) {
+    .description_title_extra {
+      max-width: 300px;
+    }
+  }
+  @media screen and (max-width: 1377px) {
+    .description_title_extra {
+      max-width: 200px;
+    }
+  }

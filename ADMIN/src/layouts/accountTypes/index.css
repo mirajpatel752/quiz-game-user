@@ -1,0 +1,73 @@
+.description_title {
+  max-width: 700px;
+}
+
+@media screen and (max-width: 1477px) {
+  .description_title {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 1377px) {
+  .description_title {
+    max-width: 500px;
+  }
+}
+.file {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file > input[type='file'] {
+  display: none
+}
+
+.file > label {
+  font-size: 14px;
+  cursor: pointer;
+  outline: 0;
+  user-select: none;
+  border-color: #1a2b51;
+  color: #fff;
+  border-style: solid;
+  border-radius: 6px;
+  border-width: 1px;
+  background-color: #1a2b51;
+  padding: 7px 22px 7px 0px !important;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.file > label:hover {
+  border-color: #1a2b51;
+}
+
+.file > label > i {
+  padding-right: 5px;
+}
+
+.file--upload > label {
+  color: #fff;
+  border-color: #1a2b51;
+}
+
+.file--upload > label:hover {
+  color: #fff;
+}
+
+
+.file--disabled {
+  cursor: not-allowed;
+}
+
+.file--disabled > label {
+  border-color: #e6e7ef;
+  color: #fff;
+  pointer-events: none;
+}
+
